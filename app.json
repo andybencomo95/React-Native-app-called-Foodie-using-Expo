@@ -1,0 +1,44 @@
+{
+  "expo": {
+    "name": "Foodie",
+    "slug": "foodie",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ff6b35"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "web": {
+      "bundler": "metro",
+      "output": "single",
+      "favicon": "./assets/favicon.png"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.foodie.app"
+    },
+    "android": {
+      "package": "com.foodie.app",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ff6b35"
+      }
+    },
+    "permissions": ["CAMERA_ROLL"],
+    "experiments": {
+      "baseUrl": "/React-Native-app-called-Foodie-using-Expo"
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Permite a Foodie acceder a tus fotos para subir imágenes de recetas."
+        }
+      ]
+    ]
+  }
+}
